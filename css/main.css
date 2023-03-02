@@ -108,11 +108,11 @@ a {
   cursor: pointer;
   color: var(--text-strong-color);
   text-decoration: none;
-  border-bottom: 1px solid var(--post-link-color);
+/* border-bottom: 1px solid var(--post-link-color) */
   transition: border-bottom 0.1s;
 }
 .post-content a:not([data-nolink]):hover {
-  border-bottom: 2px solid var(--post-link-color);
+  border-bottom: 2px solid var(--text-strong-color);
 }
 div {
   display: block;

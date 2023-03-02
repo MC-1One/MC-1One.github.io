@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Test</title>
+      <link href="/2023/03/01/Test/"/>
+      <url>/2023/03/01/Test/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> requests<span class="token keyword">import</span> re<span class="token keyword">import</span> sys<span class="token keyword">import</span> osurl <span class="token operator">=</span> <span class="token string">'https://twoshot.hgame.n3ko.co/'</span>headers <span class="token operator">=</span> <span class="token punctuation">&#123;</span>    <span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">,</span>    <span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'</span><span class="token punctuation">,</span><span class="token punctuation">&#125;</span>p <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token operator">+</span><span class="token string">'random.php?times=228'</span><span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">)</span>randnum <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">r'\d*'</span><span class="token punctuation">,</span> p<span class="token punctuation">.</span>text<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span>firstnum <span class="token operator">=</span> randnum<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>lastnum <span class="token operator">=</span> randnum<span class="token punctuation">[</span><span class="token number">227</span><span class="token punctuation">]</span>content <span class="token operator">=</span> os<span class="token punctuation">.</span>popen<span class="token punctuation">(</span><span class="token string">"python3 ./reverse_mt_rand.py "</span> <span class="token operator">+</span>                   firstnum<span class="token operator">+</span><span class="token string">' '</span><span class="token operator">+</span>lastnum<span class="token operator">+</span><span class="token string">' 0 0'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>q <span class="token operator">=</span> requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span>url<span class="token operator">+</span><span class="token string">'/verify.php'</span><span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">,</span> data<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'ans'</span><span class="token punctuation">:</span> content<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token keyword">print</span><span class="token punctuation">(</span>q<span class="token punctuation">.</span>text<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> code </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello Command</title>
+      <link href="/2023/02/28/Command/"/>
+      <url>/2023/02/28/Command/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><table><thead><tr><th align="center">command</th><th align="center">desc</th></tr></thead><tbody><tr><td align="center">git branch</td><td align="center">查看分支</td></tr><tr><td align="center">git branch main</td><td align="center">创建分支</td></tr><tr><td align="center">git rm –cached -r</td><td align="center">删除缓存</td></tr><tr><td align="center">git reset –hard HEAD</td><td align="center">回退版本</td></tr><tr><td align="center"></td><td align="center"></td></tr></tbody></table><h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><table><thead><tr><th align="center">full</th><th align="center">desc</th></tr></thead><tbody><tr><td align="center">sudo nautilus</td><td align="center">权限文件夹</td></tr><tr><td align="center">sudo apt-get  purge name</td><td align="center">完全卸载</td></tr><tr><td align="center">su</td><td align="center">超级用户</td></tr><tr><td align="center"></td><td align="center"></td></tr></tbody></table><table><thead><tr><th align="center">breif</th><th align="center">full</th><th align="center">desc</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table><table><thead><tr><th align="center">breif</th><th align="center">full</th><th align="center">desc</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table><table><thead><tr><th align="center">breif</th><th align="center">full</th><th align="center">desc</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table><table><thead><tr><th align="center">breif</th><th align="center">full</th><th align="center">desc</th></tr></thead><tbody><tr><td align="center"></td><td align="center"></td><td align="center"></td></tr></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello Hotkeys</title>
+      <link href="/2023/02/28/Hotkeys/"/>
+      <url>/2023/02/28/Hotkeys/</url>
+      
+        <content type="html"><![CDATA[<h3 id="IntelliJ-IDEA"><a href="#IntelliJ-IDEA" class="headerlink" title="IntelliJ IDEA"></a>IntelliJ IDEA</h3><table><thead><tr><th align="center">hotkey</th><th align="center">description</th></tr></thead><tbody><tr><td align="center">Ctrl + Alt + V</td><td align="center">生成变量</td></tr><tr><td align="center">Ctrl + Alt + T</td><td align="center">环绕代码</td></tr><tr><td align="center">Alt + 1</td><td align="center">资源管理器</td></tr><tr><td align="center">Alt + Fn + Insert</td><td align="center">新建文件夹</td></tr></tbody></table><h3 id="Visual-Studio"><a href="#Visual-Studio" class="headerlink" title="Visual Studio"></a>Visual Studio</h3><table><thead><tr><th>hotkey</th><th>description</th></tr></thead><tbody><tr><td>Ctrl + K Ctrl + C</td><td>行注释</td></tr><tr><td>Ctrl + K Ctrl + U</td><td>取消注释</td></tr><tr><td>Ctrl + F5</td><td>运行</td></tr><tr><td>Ctrl + Alt + L</td><td>解决方案资源管理器</td></tr><tr><td>Ctrl + K Ctrl  + F</td><td>格式化选定代码</td></tr></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello Markdown</title>
+      <link href="/2023/02/28/Markdown/"/>
+      <url>/2023/02/28/Markdown/</url>
+      
+        <content type="html"><![CDATA[<table><thead><tr><th align="center">command</th><th align="center">description</th></tr></thead><tbody><tr><td align="center">第一行</td><td align="center">表头</td></tr><tr><td align="center">第二行</td><td align="center">对齐方式</td></tr><tr><td align="center">#</td><td align="center">一级标题</td></tr><tr><td align="center">##</td><td align="center">二级标题</td></tr><tr><td align="center">###</td><td align="center">三级标题</td></tr><tr><td align="center">**</td><td align="center">斜体</td></tr><tr><td align="center">****</td><td align="center">粗体</td></tr><tr><td align="center"><u></u></td><td align="center">下划线</td></tr></tbody></table><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题#"></a>一级标题#</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题##"></a>二级标题##</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题###"></a>三级标题###</h3><ul><li>无序列表-</li></ul><ul><li>无序列表*</li></ul><ul><li>无序列表+</li></ul><blockquote><p>引用&gt;</p></blockquote><p><em>斜体Ctrl + I</em></p><p><strong>粗体 Ctrl + B</strong></p><p><u>下划线 Ctrl + U</u></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello Hexo</title>
+      <link href="/2023/02/28/Hexo/"/>
+      <url>/2023/02/28/Hexo/</url>
+      
+        <content type="html"><![CDATA[<p>| <a href="https://hexo.io/">Hexo</a> |<a href="https://hexo.io/docs/">documentation</a>| <a href="https://mc-1one.github.io/">个人博客</a>|<a href="https://zhuanlan.zhihu.com/p/60578464">知乎 Hexo 教程</a>|<a href="https://hexo.io/zh-cn/docs/index.html">Hexo 官方文档</a>|<a href="http://localhost:4000/">本地测试</a>|</p><h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><h2 id="本地测试"><a href="#本地测试" class="headerlink" title="本地测试"></a>本地测试</h2><p>hexo g &amp;&amp; hexo s</p><h2 id="网页部署"><a href="#网页部署" class="headerlink" title="网页部署"></a>网页部署</h2><p>hexo g &amp;&amp; hexo d</p><h2 id="博客编写"><a href="#博客编写" class="headerlink" title="博客编写"></a>博客编写</h2><ul><li>书签</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line">    - a</span><br><span class="line">    - b</span><br><span class="line">    - [a,b]</span><br></pre></td></tr></table></figure><ul><li>分类</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">    -[a,b]</span><br><span class="line">    -层次</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

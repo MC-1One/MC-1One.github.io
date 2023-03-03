@@ -18,17 +18,17 @@
   <link 
     rel="icon" 
     href="/">
-  <title>Test</title>
+  <title>Hello Github</title>
   
     
       <meta 
         property="og:title" 
-        content="Test">
+        content="Hello Github">
     
     
       <meta 
         property="og:url" 
-        content="https://mc-1one.github.io/2023/03/01/Test/index.html">
+        content="https://mc-1one.github.io/2023/03/03/GitHub/index.html">
     
     
     
@@ -38,18 +38,14 @@
         content="article">
       <meta 
         property="og:article:published_time" 
-        content="2023-03-01">
+        content="2023-03-03">
       <meta 
         property="og:article:modified_time" 
-        content="2023-03-01">
+        content="2023-03-03">
       <meta 
         property="og:article:author" 
         content="">
       
-        
-          <meta 
-            property="og:article:tag" 
-            content="code">
         
       
     
@@ -322,7 +318,7 @@
     style="padding-right: 2px;">
   </i>TOC
 </div>
-
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub-ReadME-Repository"><span class="toc-text">GitHub ReadME Repository</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Valuable-Links"><span class="toc-text">Valuable Links</span></a></li></ol></li></ol>
       </div>
     </article>
   
@@ -369,65 +365,31 @@
 <article class="card card-content">
   <header>
     <h1 class="post-title">
-      Test
+      Hello Github
     </h1>
   </header>
   <div class="post-meta post-show-meta">
-    <time datetime="2023-03-01T07:35:47.000Z">
+    <time datetime="2023-03-03T06:42:00.141Z">
       <i 
         class="iconfont icon-calendar" 
         style="margin-right: 2px;">
       </i>
-      <span>2023-03-01</span>
+      <span>2023-03-03</span>
     </time>
     
     
       <span class="dot"></span>
-      <span>102 words</span>
+      <span>16 words</span>
     
   </div>
-  
-    <div 
-      class="post-meta post-show-meta" 
-      style="margin-top: -10px;">
-      <div style="display: flex; align-items: center;">
-        <i 
-          class="iconfont icon-biaoqian" 
-          style="margin-right: 2px; font-size: 1.15rem;">
-        </i>
-        
-          
-          <a 
-            href="/tags/code/" 
-            class="post-meta-link">
-            code
-          </a>
-        
-      </div>
-    </div>
   
   </header>
   <div 
     id="section" 
     class="post-content">
-    <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> requests
-<span class="token keyword">import</span> re
-<span class="token keyword">import</span> sys
-<span class="token keyword">import</span> os
-url <span class="token operator">=</span> <span class="token string">'https://twoshot.hgame.n3ko.co/'</span>
-headers <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
-    <span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">,</span>
-    <span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'</span><span class="token punctuation">,</span>
-<span class="token punctuation">&#125;</span>
-p <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token operator">+</span><span class="token string">'random.php?times=228'</span><span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">)</span>
-randnum <span class="token operator">=</span> re<span class="token punctuation">.</span>findall<span class="token punctuation">(</span><span class="token string">r'\d*'</span><span class="token punctuation">,</span> p<span class="token punctuation">.</span>text<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span>
-firstnum <span class="token operator">=</span> randnum<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
-lastnum <span class="token operator">=</span> randnum<span class="token punctuation">[</span><span class="token number">227</span><span class="token punctuation">]</span>
-content <span class="token operator">=</span> os<span class="token punctuation">.</span>popen<span class="token punctuation">(</span><span class="token string">"python3 ./reverse_mt_rand.py "</span> <span class="token operator">+</span>
-                   firstnum<span class="token operator">+</span><span class="token string">' '</span><span class="token operator">+</span>lastnum<span class="token operator">+</span><span class="token string">' 0 0'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
-q <span class="token operator">=</span> requests<span class="token punctuation">.</span>post<span class="token punctuation">(</span>url<span class="token operator">+</span><span class="token string">'/verify.php'</span><span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">,</span> data<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">'ans'</span><span class="token punctuation">:</span> content<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>q<span class="token punctuation">.</span>text<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+    <h2 id="GitHub-ReadME-Repository"><a href="#GitHub-ReadME-Repository" class="headerlink" title="GitHub ReadME Repository"></a>GitHub ReadME Repository</h2><h3 id="Valuable-Links"><a href="#Valuable-Links" class="headerlink" title="Valuable Links"></a>Valuable Links</h3><p><a target="_blank" rel="noopener" href="https://github.com/DenverCoder1/github-readme-streak-stats">打卡commit统计</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/anuraghazra/github-readme-stats">Github统计</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/Ashutosh00710/github-readme-activity-graph/">活动统计Activity</a></p>
 
   </div>
   <div>
@@ -436,29 +398,15 @@ q <span class="token operator">=</span> requests<span class="token punctuation">
 </article>
 <div class="nav">
   
-    <div class="nav-item-prev">
-      <a 
-        href="/2023/03/03/GitHub/" 
-        class="nav-link">
-        <i class="iconfont icon-left nav-prev-icon"></i>
-        <div>
-          <div class="nav-label">Prev</div>
-          
-            <div class="nav-title">Hello Github </div>
-          
-        </div>
-      </a>
-    </div>
-  
   
     <div class="nav-item-next">
       <a 
-        href="/2023/02/28/Command/" 
+        href="/2023/03/01/Test/" 
         class="nav-link">
         <div>
           <div class="nav-label">Next</div>
           
-            <div class="nav-title">Hello Command </div>
+            <div class="nav-title">Test </div>
           
         </div>
         <i class="iconfont icon-right nav-next-icon"></i>
@@ -476,7 +424,7 @@ q <span class="token operator">=</span> requests<span class="token punctuation">
     style="padding-right: 2px;">
   </i>TOC
 </div>
-
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub-ReadME-Repository"><span class="toc-text">GitHub ReadME Repository</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Valuable-Links"><span class="toc-text">Valuable Links</span></a></li></ol></li></ol>
 </div>
             </main>
             <aside class="right-column">
@@ -490,7 +438,7 @@ q <span class="token operator">=</span> requests<span class="token punctuation">
     style="padding-right: 2px;">
   </i>TOC
 </div>
-
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub-ReadME-Repository"><span class="toc-text">GitHub ReadME Repository</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Valuable-Links"><span class="toc-text">Valuable Links</span></a></li></ol></li></ol>
     </article>
   
   
